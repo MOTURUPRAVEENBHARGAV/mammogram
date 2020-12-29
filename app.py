@@ -117,10 +117,10 @@ def predict():
         prediction= model.predict([[ BI_RADS_assessment,Age,Shapes,Margin,Density]])
     
         if prediction==1:
-            return render_template('index.html', Positive="MALIGNANT --- PLEASE HAVE DOCTOR'S ADVICE")
+           return render_template('index.html', Positive="🙁☹MALIGNANT --- PLEASE HAVE DOCTOR'S ADVICE 🙁☹")
 
         else:
-            return render_template('index.html', Negative="BENIGN --- NO NEED TO WORRY, BE HAPPY")
+            return render_template('index.html', Negative="😀BENIGN --- NO NEED TO WORRY, BE HAPPY😀")
                 
 if __name__=="__main__":
     app.run(debug=True)
